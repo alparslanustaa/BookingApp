@@ -1,17 +1,16 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  BrowserRouter,
-  Routes,
-} from "react-router-dom";
+
+import { Routes, BrowserRouter, Route } from "react-router-dom";
+import List from "./pages/list/List.js";
+import Home from "./pages/home/Home.js";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes path="/" element={<home />} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/hotels" element={<List />} />
+      </Routes>
     </BrowserRouter>
   );
 }
