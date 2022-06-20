@@ -1,6 +1,8 @@
 import {
   faBed,
+  faCalendarDays,
   faCar,
+  faPerson,
   faPlane,
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
@@ -38,6 +40,30 @@ const Header = () => {
           Get some rewards for your travel- unlock instant coupons.
         </p>
         <button className="headerBtn">Register/Login</button>
+        <div className="headerSearch">
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faBed} className="headerIcon" />
+            <input
+              type="text"
+              placeholder="What is your destination?"
+              className="headerSearchInput"
+            />
+          </div>
+        </div>
+        <div className="headerSearch">
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
+            <span className="headerSearchText">date to date</span>
+          </div>
+        </div>
+        <div className="headerSearch">
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faPerson} className="headerIcon" />
+            <span className="headerSearchText">
+              2 adults 2 childeren 1 room
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
