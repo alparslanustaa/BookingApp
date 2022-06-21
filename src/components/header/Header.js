@@ -63,6 +63,10 @@ const Header = () => {
               2 adults 2 childeren 1 room
             </span>
           </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faPerson} className="headerIcon" />
+            <button className="headerBtn">Search</button>
+          </div>
         </div>
       </div>
     </div>
