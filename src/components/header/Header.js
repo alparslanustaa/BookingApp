@@ -49,14 +49,11 @@ const Header = () => {
               className="headerSearchInput"
             />
           </div>
-        </div>
-        <div className="headerSearch">
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
             <span className="headerSearchText">date to date</span>
           </div>
-        </div>
-        <div className="headerSearch">
+
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faPerson} className="headerIcon" />
             <span className="headerSearchText">
